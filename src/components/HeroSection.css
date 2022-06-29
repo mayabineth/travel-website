@@ -1,3 +1,4 @@
+
 .hero-container {
   background: url("/public/images/img-home.jpg") center center/cover no-repeat;
   height: 100vh;
@@ -9,11 +10,11 @@
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
   object-fit: contain;
 }
-
 .hero-container > h1 {
   color: #fff;
   font-size: 6rem;
-  margin-top: 10rem;
+  margin-top: 15rem;
+  margin-bottom: 1rem;
 }
 .hero-container > p {
   color: #fff;
