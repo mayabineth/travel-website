@@ -23,6 +23,7 @@
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
+  height: 100vh;
 }
 
 .products {
@@ -32,6 +33,7 @@
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
+  height: 100vh;
 }
 
 .sign-up {
@@ -41,4 +43,14 @@
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
+  height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+  .home,
+  .services,
+  .products,
+  .sign-up {
+    font-size: 60px;
+  }
 }
