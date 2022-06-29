@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { Button } from "./Button";
 import "./Navbar.css";
 import { FaBars } from "react-icons/fa";
-import logo from "../images/group.png";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -22,8 +21,8 @@ const Navbar = () => {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="/" onClick={closeMobileMenu} className="navbar-logo-out">
-            <img src={logo} alt="favicon" className="navbar-logo" />
+          <Link to="/" onClick={closeMobileMenu} className="navbar-logo">
+            FanDest
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <button className={click ? "fas fa-times" : "fas fa-bars"}>
@@ -64,7 +63,11 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle="btn--outline">SIGN UP</Button>}
+          {button && (
+            <Button className="btn" buttonStyle="btn--outline">
+              SIGN UP
+            </Button>
+          )}
         </div>
       </nav>
     </>
